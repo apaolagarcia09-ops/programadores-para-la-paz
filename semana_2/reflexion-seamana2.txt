@@ -1,0 +1,9 @@
+¿Por qué es importante para un desarrollador saber usar la terminal para 
+navegar y organizar archivos dentro de un proyecto?
+ RTA: Muchos dirian que hoy en dia ya no es necesario no solo por el uso de las intefaces 
+graficas que son practicamente la traduccion de estos comandos 
+si no de los agentes de ia que ya te puedn organizar toda la estructura de archivos,
+pero por eso mismo recae la importancia, como sabemos si la ia lo hizo bien? o que un dia
+nos toque usar un sistemas operativo que no tenga interfaces
+la terminal o powershell son el corazon de la informatica, es practicamente las 
+vocales y consoanantes en el mundo de la informatica.
