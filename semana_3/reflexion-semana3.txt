@@ -1,0 +1,9 @@
+¿Por qué es importante que los proyectos de software mantengan un 
+registro de cambios usando herramientas como Git?
+
+RTA: es basicamente el alma del desarrollo, un equipo de software es como una construccion de una cada
+uno primero se hacen los planos, se ponen tareas, se hace alguien mezcla, otro pone
+otro pinta otro decora etc, es lo mismo aqui, si tenemos un equipo con diferentes tareas no podemos pretender 
+que todos toquen el codigo, git te da la psoiblidad de clonar la version en produccion hacer lso cambios requeridos subir tud cambios y poder ver si tus cmbios afectan los cambios de alguien mas, ahi se resuleven conflictos etc, 
+o si tenemos un version de preuba hacer las preubas requeridas para que cuado hagamos cambios porduccion no se vaya a caer, en fin
+es la organasacion y la fomra de crear software con las mejores practicas posibles que dicta la industria.

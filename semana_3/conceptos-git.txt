@@ -1,0 +1,8 @@
+Repositorio : es paracticamente una blibloteca propia, donde guardas direcctorios completos,
+se pueden hacer ramas, versiones desplegadas, versiones de pruebas, se pueden combinar direcctorios y llevar n registro de tareas
+pueden ser publicos o privados y configurar los perfiles que pueden acceder o modificar dichos repos.
+
+Commit : es praticamente lo que se hace despues del "git add" y su funcion principal es que cuando se haga el push se tenga un mesanje o registro que haga referncia al cambio o tarea del commit
+puede ser un manesaje, una fecha, el nombre o codigo de la version etc.
+
+Push : es basicamente mandar la informacion encapsulada i cimmitiada a la rama referida, ya sea la rama main, la rama origin o una que hayamos creado.
