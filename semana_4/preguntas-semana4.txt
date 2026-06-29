@@ -1,0 +1,30 @@
+RESPUESTAS - SEMANA 4
+
+PREGUNTA 5: Crear carpeta de la semana
+Comando: mkdir semana4
+Descripción: Se creó la carpeta semana4 dentro del proyecto principal.
+
+PREGUNTA 6: Inicializar proyecto Node.js
+Comandos ejecutados:
+- npm init -y (creó el archivo package.json)
+- npm install express (instaló la dependencia de Express)
+Descripción: Se inicializó el proyecto con npm y se instaló Express como framework web.
+
+PREGUNTA 7: Crear el servidor básico
+Archivo creado: server.js
+Contenido: Código que crea un servidor Express que escucha en el puerto 3000 y responde con un mensaje en la ruta raíz.
+
+PREGUNTA 8: Ejecutar el servidor
+Comando: node server.js
+Resultado: El servidor se ejecutó correctamente y respondió en http://localhost:3000 con el mensaje "Servidor funcionando correctamente"
+
+PREGUNTA 9: Reflexión de la semana
+Archivo creado: reflexion-semana4.txt (ver archivo adjunto)
+
+PREGUNTA 10: Publicar la actividad en GitHub
+Comandos ejecutados:
+- git status (verificó cambios pendientes)
+- git add . (agregó los archivos al staging)
+- git commit -m "Actividad semana 4" (creó el commit)
+- git push (envió los cambios a GitHub)
+Resultado: La carpeta semana4 se subió exitosamente al repositorio de GitHub con todos los archivos solicitados.
