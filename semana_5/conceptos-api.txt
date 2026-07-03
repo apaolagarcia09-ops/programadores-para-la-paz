@@ -1,0 +1,30 @@
+CONCEPTOS - API Y RUTA POST - SEMANA 5
+
+¿Qué hace la ruta POST /reporte?
+
+La ruta `app.post('/reporte', ...)` es un endpoint que escucha solicitudes POST en la dirección `/reporte`. Cuando un cliente envía datos en formato JSON con un campo "mensaje", el servidor recibe esos datos, los procesa y devuelve una respuesta en JSON que confirma la recepción del reporte.
+
+El código funciona así:
+1. Recibe el JSON enviado por el cliente (ej: {"mensaje": "Reporte de prueba"})
+2. Extrae el campo "mensaje" del cuerpo de la solicitud
+3. Responde con un JSON que incluye el estado "Reporte recibido" y el mensaje registrado
+
+Ejemplo de uso:
+- Envías: {"mensaje": "Falta iluminación en la calle 5"}
+- El servidor responde: {"estado": "Reporte recibido", "mensaje": "Falta iluminación en la calle 5"}
+
+¿Para qué podría servir en una aplicación comunitaria?
+
+Esta ruta POST es fundamental para crear sistemas de reporte y participación ciudadana. Algunas aplicaciones prácticas incluyen:
+
+1. Sistema de reportes ciudadanos: Los vecinos pueden reportar problemas como baches, luminarias dañadas o espacios públicos descuidados.
+
+2. Alertas comunitarias: Permite que miembros de una comunidad compartan alertas sobre eventos importantes, peligros o situaciones de emergencia.
+
+3. Buzón digital: Funciona como un buzón de sugerencias y quejas donde la comunidad puede registrar retroalimentación de manera centralizada.
+
+4. Sistema de denuncias: Permite reportar irregularidades o problemáticas en la comunidad de forma segura y documentada.
+
+5. Recopilación de datos: Facilita la recolección estructurada de información para análisis posterior y toma de decisiones basada en datos comunitarios.
+
+Esta arquitectura permite que la información fluya de manera organizada, creando un registro auditable de los reportes y mejorando la comunicación entre la comunidad y las autoridades o gestores del proyecto.

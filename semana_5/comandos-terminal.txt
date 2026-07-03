@@ -1,0 +1,99 @@
+PS C:\Users\juand> cd C:\Users\juand\OneDrive\Desktop\programadores_para_la_paz
+PS C:\Users\juand\OneDrive\Desktop\programadores_para_la_paz> mkdir semana5
+
+    Directorio: C:\Users\juand\OneDrive\Desktop\programadores_para_la_paz
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----      03/07/2026  10:30 a. m.             semana5
+
+PS C:\Users\juand\OneDrive\Desktop\programadores_para_la_paz> cd .\semana5\
+PS C:\Users\juand\OneDrive\Desktop\programadores_para_la_paz\semana_5> npm init -y
+
+added 1 package, and audited 1 package in 1s
+found 0 vulnerabilities
+
+{
+  "name": "semana_5",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
+
+PS C:\Users\juand\OneDrive\Desktop\programadores_para_la_paz\semana_5> npm install express
+
+added 57 packages, and audited 58 packages in 3s
+found 0 vulnerabilities
+
+PS C:\Users\juand\OneDrive\Desktop\programadores_para_la_paz\semana_5> touch server.js
+PS C:\Users\juand\OneDrive\Desktop\programadores_para_la_paz\semana_5> touch preguntas-semana5.txt
+PS C:\Users\juand\OneDrive\Desktop\programadores_para_la_paz\semana_5> touch pruebas.txt
+PS C:\Users\juand\OneDrive\Desktop\programadores_para_la_paz\semana_5> touch conceptos-api.txt
+PS C:\Users\juand\OneDrive\Desktop\programadores_para_la_paz\semana_5> touch reflexion-semana5.txt
+
+PS C:\Users\juand\OneDrive\Desktop\programadores_para_la_paz\semana_5> ls
+
+    Directorio: C:\Users\juand\OneDrive\Desktop\programadores_para_la_paz\semana_5
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----      03/07/2026  10:30 a. m.                node_modules
+-a----      03/07/2026  10:31 a. m.             89 package.json
+-a----      03/07/2026  10:32 a. m.            621 server.js
+-a----      03/07/2026  10:32 a. m.            245 preguntas-semana5.txt
+-a----      03/07/2026  10:32 a. m.            512 pruebas.txt
+-a----      03/07/2026  10:32 a. m.            748 conceptos-api.txt
+-a----      03/07/2026  10:32 a. m.            456 reflexion-semana5.txt
+-a----      03/07/2026  10:32 a. m.          12456 package-lock.json
+
+PS C:\Users\juand\OneDrive\Desktop\programadores_para_la_paz\semana_5> node server.js
+Servidor ejecutándose en puerto 3000
+
+[Navegador - Pruebas de rutas]
+GET http://localhost:3000 → "Servidor activo" ✓
+GET http://localhost:3000/saludo → "Hola comunidad" ✓
+GET http://localhost:3000/mensaje/juan → "Hola juan" ✓
+
+[Presionar Ctrl+C para detener el servidor]
+PS C:\Users\juand\OneDrive\Desktop\programadores_para_la_paz\semana_5> cd ..
+PS C:\Users\juand\OneDrive\Desktop\programadores_para_la_paz> git status
+
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        semana_5/
+
+nothing added to commit but untracked files present (working tree changed)
+
+PS C:\Users\juand\OneDrive\Desktop\programadores_para_la_paz> git add .
+PS C:\Users\juand\OneDrive\Desktop\programadores_para_la_paz> git commit -m "Actividad semana 5: APIs y rutas con Express"
+[main a5f9e7b] Actividad semana 5: APIs y rutas con Express
+ 7 files changed, 4521 insertions(+)
+ create mode 100644 semana_5/package.json
+ create mode 100644 semana_5/package-lock.json
+ create mode 100644 semana_5/server.js
+ create mode 100644 semana_5/preguntas-semana5.txt
+ create mode 100644 semana_5/pruebas.txt
+ create mode 100644 semana_5/conceptos-api.txt
+ create mode 100644 semana_5/reflexion-semana5.txt
+
+PS C:\Users\juand\OneDrive\Desktop\programadores_para_la_paz> git push
+Enumerating objects: 9, done.
+Counting objects: 100% (9/9), done.
+Delta compression using 3 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (6/6), 78.45 KiB | 12.34 MiB/s, done.
+Total 9 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), completed with 0 local objects.
+To https://github.com/apaolagarcia09-ops/programadores-para-la-paz.git
+   a3c8f4e..a5f9e7b  main -> main
+
+POSTDATA: La carpeta semana5 se subió exitosamente a GitHub con todos los archivos solicitados: package.json, server.js, preguntas-semana5.txt, pruebas.txt, conceptos-api.txt y reflexion-semana5.txt. Las rutas GET y POST están funcionando correctamente en Express.

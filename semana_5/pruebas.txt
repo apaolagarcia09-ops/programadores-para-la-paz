@@ -1,0 +1,15 @@
+PRUEBAS DE RUTAS - SEMANA 5
+
+Ruta 1: http://localhost:3000
+Respuesta: "Servidor activo"
+Descripción: Esta es la ruta raíz que verifica que el servidor está funcionando correctamente. Cuando accedes a esta URL, Express responde con un mensaje simple indicando que el servidor está activo y listo para recibir solicitudes.
+
+Ruta 2: http://localhost:3000/saludo
+Respuesta: "Hola comunidad"
+Descripción: Esta ruta devuelve un saludo general a la comunidad. Es una ruta GET simple que no requiere parámetros. El servidor responde con un mensaje fijo cada vez que se accede a ella, demostrando cómo crear rutas específicas en Express.
+
+Ruta 3: http://localhost:3000/mensaje/juan
+Respuesta: "Hola juan"
+Descripción: Esta ruta utiliza un parámetro dinámico llamado "nombre" (`:nombre`). El valor "juan" es capturado desde la URL y se utiliza para personalizar la respuesta. Si cambias la URL a "http://localhost:3000/mensaje/maria", la respuesta será "Hola maria". Esto demuestra cómo recibir datos desde la URL y procesarlos en el servidor.
+
+Nota: La ruta POST /reporte no se puede probar directamente desde el navegador porque POST requiere enviar datos en el cuerpo de la solicitud. Se requiere una herramienta como Postman o Thunder Client para probarla.
