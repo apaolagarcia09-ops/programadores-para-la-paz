@@ -1,0 +1,28 @@
+PRUEBA DE API - SEMANA 6
+
+Ruta: POST http://localhost:3000/registro
+
+Datos enviados (JSON):
+{
+  "nombre": "Maria",
+  "mensaje": "Hola comunidad"
+}
+
+Respuesta del servidor:
+{
+  "estado": "Datos recibidos",
+  "nombre": "Maria",
+  "mensaje": "Hola comunidad"
+}
+
+Explicación:
+Cuando se envía una petición POST a la ruta `/registro` con un JSON que contiene los campos "nombre" y "mensaje", el servidor Express recibe esos datos a través de `req.body`. El middleware `express.json()` es responsable de parsear (convertir) el JSON enviado en un objeto JavaScript que podemos usar dentro de nuestra aplicación.
+
+El servidor extrae el nombre y el mensaje del cuerpo de la petición, y devuelve una respuesta JSON que confirma que los datos fueron recibidos correctamente. Este patrón es fundamental para crear aplicaciones que interactúan con datos del usuario, como formularios, reportes o cualquier entrada de información desde un cliente.
+
+La respuesta siempre incluye el estado "Datos recibidos" junto con los mismos datos que el cliente envió, lo que permite que el cliente confirme que su información fue registrada correctamente en el servidor.
+
+Herramientas para probar:
+- Postman: https://www.postman.com/
+- Thunder Client: Extensión de VS Code
+- cURL en la terminal

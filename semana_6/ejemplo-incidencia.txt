@@ -1,0 +1,62 @@
+EJEMPLO DE INCIDENCIA - SEMANA 6
+
+Ejemplo 1: Reporte de iluminación pública dañada
+
+JSON para enviar:
+{
+  "tipo": "Iluminación pública",
+  "descripcion": "La comunidad reporta que una lámpara del parque no funciona desde hace varios días. Se encuentra ubicada cerca de la entrada principal."
+}
+
+Respuesta del servidor:
+{
+  "mensaje": "Incidencia registrada",
+  "tipo": "Iluminación pública",
+  "descripcion": "La comunidad reporta que una lámpara del parque no funciona desde hace varios días. Se encuentra ubicada cerca de la entrada principal."
+}
+
+---
+
+Ejemplo 2: Reporte de bache en la calle
+
+JSON para enviar:
+{
+  "tipo": "Vía pública",
+  "descripcion": "Existe un bache en la calle principal que representa un peligro para vehículos y peatones. Requiere reparación urgente."
+}
+
+Respuesta del servidor:
+{
+  "mensaje": "Incidencia registrada",
+  "tipo": "Vía pública",
+  "descripcion": "Existe un bache en la calle principal que representa un peligro para vehículos y peatones. Requiere reparación urgente."
+}
+
+---
+
+Ejemplo 3: Reporte de problema de seguridad
+
+JSON para enviar:
+{
+  "tipo": "Seguridad comunitaria",
+  "descripcion": "Se ha observado actividad sospechosa en el parque durante las noches. Se solicita mayor patrullaje policial en la zona."
+}
+
+Respuesta del servidor:
+{
+  "mensaje": "Incidencia registrada",
+  "tipo": "Seguridad comunitaria",
+  "descripcion": "Se ha observado actividad sospechosa en el parque durante las noches. Se solicita mayor patrullaje policial en la zona."
+}
+
+---
+
+Cómo probar:
+1. Inicia el servidor: node server.js
+2. Usa Postman o Thunder Client
+3. Selecciona el método POST
+4. Ingresa la URL: http://localhost:3000/incidencia
+5. Ve a la sección Body → raw → JSON
+6. Copia uno de los ejemplos anteriores
+7. Click en Send
+8. Verás la respuesta del servidor con la incidencia registrada

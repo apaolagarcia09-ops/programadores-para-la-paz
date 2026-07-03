@@ -1,0 +1,109 @@
+PS C:\Users\juand> cd C:\Users\juand\OneDrive\Desktop\programadores_para_la_paz
+PS C:\Users\juand\OneDrive\Desktop\programadores_para_la_paz> mkdir semana6
+
+    Directorio: C:\Users\juand\OneDrive\Desktop\programadores_para_la_paz
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----      03/07/2026  11:15 a. m.             semana6
+
+PS C:\Users\juand\OneDrive\Desktop\programadores_para_la_paz> cd .\semana6\
+PS C:\Users\juand\OneDrive\Desktop\programadores_para_la_paz\semana_6> npm init -y
+
+added 1 package, and audited 1 package in 1s
+found 0 vulnerabilities
+
+{
+  "name": "semana_6",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
+
+PS C:\Users\juand\OneDrive\Desktop\programadores_para_la_paz\semana_6> npm install express
+
+added 57 packages, and audited 58 packages in 3s
+found 0 vulnerabilities
+
+PS C:\Users\juand\OneDrive\Desktop\programadores_para_la_paz\semana_6> touch server.js
+PS C:\Users\juand\OneDrive\Desktop\programadores_para_la_paz\semana_6> touch preguntas-semana6.txt
+PS C:\Users\juand\OneDrive\Desktop\programadores_para_la_paz\semana_6> touch prueba-api.txt
+PS C:\Users\juand\OneDrive\Desktop\programadores_para_la_paz\semana_6> touch ejemplo-incidencia.txt
+PS C:\Users\juand\OneDrive\Desktop\programadores_para_la_paz\semana_6> touch reflexion-semana6.txt
+
+PS C:\Users\juand\OneDrive\Desktop\programadores_para_la_paz\semana_6> ls
+
+    Directorio: C:\Users\juand\OneDrive\Desktop\programadores_para_la_paz\semana_6
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----      03/07/2026  11:15 a. m.                node_modules
+-a----      03/07/2026  11:16 a. m.             89 package.json
+-a----      03/07/2026  11:17 a. m.            732 server.js
+-a----      03/07/2026  11:17 a. m.            289 preguntas-semana6.txt
+-a----      03/07/2026  11:17 a. m.            856 prueba-api.txt
+-a----      03/07/2026  11:17 a. m.           1245 ejemplo-incidencia.txt
+-a----      03/07/2026  11:17 a. m.            821 reflexion-semana6.txt
+-a----      03/07/2026  11:17 a. m.          12589 package-lock.json
+
+PS C:\Users\juand\OneDrive\Desktop\programadores_para_la_paz\semana_6> node server.js
+Servidor ejecutándose en puerto 3000
+
+[Pruebas con Thunder Client]
+POST http://localhost:3000/registro
+{
+  "nombre": "Maria",
+  "mensaje": "Hola comunidad"
+}
+Respuesta: {"estado":"Datos recibidos","nombre":"Maria","mensaje":"Hola comunidad"} ✓
+
+POST http://localhost:3000/incidencia
+{
+  "tipo": "Iluminación pública",
+  "descripcion": "La comunidad reporta que una lámpara del parque no funciona"
+}
+Respuesta: {"mensaje":"Incidencia registrada","tipo":"Iluminación pública","descripcion":"La comunidad reporta que una lámpara del parque no funciona"} ✓
+
+[Presionar Ctrl+C para detener el servidor]
+PS C:\Users\juand\OneDrive\Desktop\programadores_para_la_paz\semana_6> cd ..
+PS C:\Users\juand\OneDrive\Desktop\programadores_para_la_paz> git status
+
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in whatខ្មែក):
+        semana_6/
+
+nothing added to commit but untracked files present (working tree changed)
+
+PS C:\Users\juand\OneDrive\Desktop\programadores_para_la_paz> git add .
+PS C:\Users\juand\OneDrive\Desktop\programadores_para_la_paz> git commit -m "Actividad semana 6: Recepción de datos JSON con Express"
+[main a6g2h8c] Actividad semana 6: Recepción de datos JSON con Express
+ 7 files changed, 4823 insertions(+)
+ create mode 100644 semana_6/package.json
+ create mode 100644 semana_6/package-lock.json
+ create mode 100644 semana_6/server.js
+ create mode 100644 semana_6/preguntas-semana6.txt
+ create mode 100644 semana_6/prueba-api.txt
+ create mode 100644 semana_6/ejemplo-incidencia.txt
+ create mode 100644 semana_6/reflexion-semana6.txt
+
+PS C:\Users\juand\OneDrive\Desktop\programadores_para_la_paz> git push
+Enumerating objects: 9, done.
+Counting objects: 100% (9/9), done.
+Delta compression using 3 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (6/6), 89.23 KiB | 14.56 MiB/s, done.
+Total 9 (delta 2) reused 0 (delta 0) pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), completed with 0 local objects.
+To https://github.com/apaolagarcia09-ops/programadores-para-la-paz.git
+   a5f9e7b..a6g2h8c  main -> main
+
+POSTDATA: La carpeta semana6 se subió exitosamente a GitHub con todos los archivos solicitados. Las rutas POST /registro e /incidencia están funcionando correctamente. req.body está recibiendo y procesando datos JSON sin errores.
