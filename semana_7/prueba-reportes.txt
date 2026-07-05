@@ -1,0 +1,38 @@
+PRUEBA DE REPORTES - SEMANA 7
+
+Ruta GET: http://localhost:3000/reportes
+
+Descripción:
+Esta ruta consulta todos los reportes almacenados en el servidor. Utiliza el método GET para solicitar información sin enviar datos. El servidor responde con un array JSON que contiene todos los reportes registrados hasta el momento.
+
+Comportamiento:
+1. Cuando se consulta por primera vez (sin reportes): Devuelve un array vacío []
+2. Después de registrar reportes con POST: Devuelve todos los reportes con su id, tipo y descripción
+
+Ejemplo de respuesta después de registrar reportes:
+[
+  {
+    "id": 1,
+    "tipo": "Infraestructura",
+    "descripcion": "Daño en alumbrado público"
+  },
+  {
+    "id": 2,
+    "tipo": "Ambiente",
+    "descripcion": "Acumulación de residuos en una zona comunitaria"
+  }
+]
+
+Proceso completo de prueba:
+1. Inicia el servidor: node server.js
+2. Abre Thunder Client o Postman
+3. Envía un POST a http://localhost:3000/reportes con JSON:
+   {
+     "tipo": "Infraestructura",
+     "descripcion": "Daño en alumbrado público"
+   }
+4. Recibirás confirmación del reporte registrado
+5. Ahora consulta GET http://localhost:3000/reportes
+6. Verás el array con el reporte que acabas de agregar
+
+Nota importante: Los datos se guardan en memoria mientras el servidor está en ejecución. Si reinician el servidor, la lista se vaciará nuevamente.

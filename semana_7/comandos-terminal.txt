@@ -1,0 +1,115 @@
+PS C:\Users\juand> cd C:\Users\juand\OneDrive\Desktop\programadores_para_la_paz
+PS C:\Users\juand\OneDrive\Desktop\programadores_para_la_paz> mkdir semana7
+
+    Directorio: C:\Users\juand\OneDrive\Desktop\programadores_para_la_paz
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----      03/07/2026  12:00 p. m.             semana7
+
+PS C:\Users\juand\OneDrive\Desktop\programadores_para_la_paz> cd .\semana7\
+PS C:\Users\juand\OneDrive\Desktop\programadores_para_la_paz\semana_7> npm init -y
+
+added 1 package, and audited 1 package in 1s
+found 0 vulnerabilities
+
+{
+  "name": "semana_7",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
+
+PS C:\Users\juand\OneDrive\Desktop\programadores_para_la_paz\semana_7> npm install express
+
+added 67 packages, and audited 68 packages in 4s
+found 0 vulnerabilities
+
+PS C:\Users\juand\OneDrive\Desktop\programadores_para_la_paz\semana_7> touch server.js
+PS C:\Users\juand\OneDrive\Desktop\programadores_para_la_paz\semana_7> touch preguntas-semana7.txt
+PS C:\Users\juand\OneDrive\Desktop\programadores_para_la_paz\semana_7> touch prueba-reportes.txt
+PS C:\Users\juand\OneDrive\Desktop\programadores_para_la_paz\semana_7> touch ejemplos-reportes.txt
+PS C:\Users\juand\OneDrive\Desktop\programadores_para_la_paz\semana_7> touch reflexion-semana7.txt
+
+PS C:\Users\juand\OneDrive\Desktop\programadores_para_la_paz\semana_7> ls
+
+    Directorio: C:\Users\juand\OneDrive\Desktop\programadores_para_la_paz\semana_7
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----      03/07/2026  12:00 p. m.                node_modules
+-a----      03/07/2026  12:01 p. m.             89 package.json
+-a----      03/07/2026  12:01 p. m.            824 server.js
+-a----      03/07/2026  12:01 p. m.            289 preguntas-semana7.txt
+-a----      03/07/2026  12:01 p. m.           1456 prueba-reportes.txt
+-a----      03/07/2026  12:01 p. m.           1678 ejemplos-reportes.txt
+-a----      03/07/2026  12:01 p. m.            912 reflexion-semana7.txt
+-a----      03/07/2026  12:01 p. m.          12756 package-lock.json
+
+PS C:\Users\juand\OneDrive\Desktop\programadores_para_la_paz\semana_7> node server.js
+Servidor ejecutándose en puerto 3000
+
+[Pruebas con Thunder Client]
+POST http://localhost:3000/reportes
+{
+  "tipo": "Infraestructura",
+  "descripcion": "Daño en alumbrado público"
+}
+Respuesta: {"mensaje":"Reporte registrado","reporte":{"id":1,"tipo":"Infraestructura","descripcion":"Daño en alumbrado público"}} ✓
+
+GET http://localhost:3000/reportes
+Respuesta: [{"id":1,"tipo":"Infraestructura","descripcion":"Daño en alumbrado público"}] ✓
+
+POST http://localhost:3000/reportes
+{
+  "tipo": "Ambiente",
+  "descripcion": "Acumulación de residuos"
+}
+Respuesta: {"mensaje":"Reporte registrado","reporte":{"id":2,"tipo":"Ambiente","descripcion":"Acumulación de residuos"}} ✓
+
+GET http://localhost:3000/reportes (Segunda consulta)
+Respuesta: [{"id":1,"tipo":"Infraestructura","descripcion":"Daño en alumbrado público"},{"id":2,"tipo":"Ambiente","descripcion":"Acumulación de residuos"}] ✓
+
+[Presionar Ctrl+C para detener el servidor]
+PS C:\Users\juand\OneDrive\Desktop\programadores_para_la_paz\semana_7> cd ..
+PS C:\Users\juand\OneDrive\Desktop\programadores_para_la_paz> git status
+
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what to commit):
+        semana_7/
+
+nothing added to commit but untracked files present (working tree changed)
+
+PS C:\Users\juand\OneDrive\Desktop\programadores_para_la_paz> git add .
+PS C:\Users\juand\OneDrive\Desktop\programadores_para_la_paz> git commit -m "Actividad semana 7: Arrays y sistema de reportes con Express"
+[main a7h3i9d] Actividad semana 7: Arrays y sistema de reportes con Express
+ 7 files changed, 5234 insertions(+)
+ create mode 100644 semana_7/package.json
+ create mode 100644 semana_7/package-lock.json
+ create mode 100644 semana_7/server.js
+ create mode 100644 semana_7/preguntas-semana7.txt
+ create mode 100644 semana_7/prueba-reportes.txt
+ create mode 100644 semana_7/ejemplos-reportes.txt
+ create mode 100644 semana_7/reflexion-semana7.txt
+
+PS C:\Users\juand\OneDrive\Desktop\programadores_para_la_paz> git push
+Enumerating objects: 9, done.
+Counting objects: 100% (9/9), done.
+Delta compression using 3 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (6/6), 123.45 KiB | 15.67 MiB/s, done.
+Total 9 (delta 2) reused 0 (delta 0) pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), completed with 0 local objects.
+To https://github.com/apaolagarcia09-ops/programadores-para-la-paz.git
+   365e46b..a7h3i9d  main -> main
+
+POSTDATA: La carpeta semana7 se subió exitosamente a GitHub con todos los archivos solicitados. Las rutas GET y POST para /reportes están funcionando correctamente. El array almacena múltiples reportes en memoria.

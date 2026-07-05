@@ -1,0 +1,5 @@
+REFLEXIÓN - SEMANA 7
+
+¿Por qué es importante que las comunidades puedan registrar y consultar reportes o incidencias en una plataforma tecnológica?
+
+Permitir que las comunidades registren y consulten reportes en una plataforma tecnológica es crucial para mejorar la gobernanza local y la calidad de vida de los ciudadanos. Primero, centraliza la información en un solo lugar accesible, evitando que los problemas se pierdan en conversaciones fragmentadas en diferentes canales de comunicación. Esto crea un registro transparente y auditable de los problemas que enfrenta la comunidad, lo que facilita que las autoridades identifiquen patrones y prioricen recursos de manera más efectiva. Además, empodera a los ciudadanos dándoles una voz formal para reportar incidencias y participar en la solución de problemas comunitarios. Una plataforma así aumenta la confianza en las instituciones al demostrar que los reportes son tomados en serio y procesados sistemáticamente. Finalmente, los datos recopilados pueden análisis posteriores para implementar mejoras basadas en evidencia, generando un ciclo de mejora continua que beneficia a toda la comunidad.

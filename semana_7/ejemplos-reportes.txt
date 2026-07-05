@@ -1,0 +1,61 @@
+EJEMPLOS DE REPORTES CIUDADANOS - SEMANA 7
+
+Ejemplo 1: Reporte de Infraestructura
+
+JSON para registrar:
+{
+  "tipo": "Infraestructura",
+  "descripcion": "Daño en alumbrado público de la calle principal. La luminaria está completamente apagada y representa un riesgo de seguridad para los peatones durante la noche."
+}
+
+Respuesta del servidor:
+{
+  "mensaje": "Reporte registrado",
+  "reporte": {
+    "id": 1,
+    "tipo": "Infraestructura",
+    "descripcion": "Daño en alumbrado público de la calle principal. La luminaria está completamente apagada y representa un riesgo de seguridad para los peatones durante la noche."
+  }
+}
+
+---
+
+Ejemplo 2: Reporte de Ambiente
+
+JSON para registrar:
+{
+  "tipo": "Ambiente",
+  "descripcion": "Acumulación de residuos en el parque comunitario. Se ha detectado basura dispersa en toda el área de juegos infantiles, lo que afecta la limpieza y la salud de la comunidad."
+}
+
+Respuesta del servidor:
+{
+  "mensaje": "Reporte registrado",
+  "reporte": {
+    "id": 2,
+    "tipo": "Ambiente",
+    "descripcion": "Acumulación de residuos en el parque comunitario. Se ha detectado basura dispersa en toda el área de juegos infantiles, lo que afecta la limpieza y la salud de la comunidad."
+  }
+}
+
+---
+
+Ejemplo 3: Reporte de Seguridad
+
+JSON para registrar:
+{
+  "tipo": "Seguridad",
+  "descripcion": "Presencia de perros callejeros en las cercanías de la escuela. Esto representa un riesgo para los niños que se dirigen a clase. Se recomienda captura y cuidado de los animales."
+}
+
+---
+
+Cómo registrar reportes:
+1. Abre Thunder Client en VS Code
+2. Crea solicitud POST
+3. URL: http://localhost:3000/reportes
+4. Body → JSON
+5. Pega uno de los ejemplos anteriores
+6. Click en Send
+
+El servidor asignará automáticamente un ID único a cada reporte basado en su posición en el array.
