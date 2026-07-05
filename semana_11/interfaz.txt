@@ -1,0 +1,37 @@
+INTERFAZ BÁSICA - PLATAFORMA COMUNITARIA
+=========================================
+
+La interfaz tendría varias secciones principales:
+
+SECCIÓN 1: Crear Nueva Causa
+- Formulario con campos: Título, Descripción, Fecha de inicio
+- Botón "Crear Causa" para enviar el formulario
+- Validación de campos antes de enviar
+- Mensaje de confirmación después de crear
+
+SECCIÓN 2: Lista de Causas
+- Listado de todas las causas disponibles
+- Para cada causa se muestra: Título, descripción breve, fecha de creación
+- Información visible: número de apoyos, estado actual
+- Interfaz clara y fácil de leer
+
+SECCIÓN 3: Detalles de Causa
+- Al hacer clic en una causa, se muestra vista detallada
+- Título completo, descripción extendida
+- Botón "Apoyo" con contador de apoyos actuales
+- Registro de quién apoyó (solo nombre público, no datos personales)
+- Fecha de última actualización
+
+SECCIÓN 4: Barra de Navegación
+- Opción de login/logout
+- Acceso a "Mis Causas" para el usuario autenticado
+- Búsqueda de causas por título o categoría
+- Información del usuario logueado (nombre público)
+
+SECCIÓN 5: Protección de Privacidad
+- Nunca mostrar correos personales, teléfonos o direcciones
+- Los contadores de apoyo muestran solo número, no lista de usuarios
+- Perfiles públicos muestran solo nombre e historial de causas apoyadas
+- Datos sensibles protegidos tras autenticación
+
+La interfaz es responsiva, accesible y enfocada en la facilidad de uso para que la comunidad pueda participar sin complicaciones técnicas.

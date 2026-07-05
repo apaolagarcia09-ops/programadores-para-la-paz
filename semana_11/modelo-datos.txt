@@ -1,0 +1,46 @@
+MODELO DE DATOS - PLATAFORMA COMUNITARIA
+========================================
+
+Entidad: Causa
+
+Campos principales:
+- id: Identificador único de la causa
+- titulo: Nombre o título de la causa comunitaria
+- descripcion: Descripción detallada de la causa
+- fecha: Fecha de creación de la causa
+- estado: Estado actual (activa, completada, cancelada)
+
+Propósito:
+Guardar las causas comunitarias que serán visibles en la plataforma. Esta entidad permite registrar iniciativas, proyectos o solicitudes que requieren apoyo de la comunidad.
+
+
+Entidad: Apoyo
+
+Campos principales:
+- id: Identificador único del apoyo
+- causa_id: Referencia a la causa que recibe el apoyo
+- usuario_id: Identificador del usuario que da apoyo
+- fecha_apoyo: Fecha en que se registró el apoyo
+- tipo_apoyo: Tipo de apoyo (voluntario, donación, voto, etc.)
+
+Propósito:
+Registrar los apoyos que recibe cada causa para hacer seguimiento a la participación comunitaria. Permite contar apoyos, identificar patrones de participación y evaluar el impacto de las iniciativas.
+
+
+Entidad: Usuario
+
+Campos principales:
+- id: Identificador único del usuario
+- email: Correo electrónico para autenticación
+- nombre: Nombre público del usuario
+- fecha_registro: Fecha de creación de la cuenta
+- activo: Estado del usuario (activo o inactivo)
+
+Propósito:
+Almacenar información de usuarios que participan en la plataforma. Permite autenticar accesos, mantener registros de participación y proteger la privacidad con datos estructurados.
+
+
+Relaciones:
+- Una Causa puede tener múltiples Apoyos
+- Un Usuario puede dar múltiples Apoyos
+- Un Usuario puede crear múltiples Causas

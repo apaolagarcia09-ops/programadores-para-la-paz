@@ -1,0 +1,10 @@
+REFLEXIÓN SEMANA 11
+===================
+
+Una plataforma tecnológica que promueve participación ciudadana debe tener base de datos para guardar de forma estructurada todas las causas, apoyos y registros de la comunidad. Sin una base de datos, la información se perdería y no habría forma de hacer seguimiento a las iniciativas ni de medir el impacto.
+
+La autenticación de usuarios es esencial porque protege la plataforma de accesos no autorizados y permite que cada persona tenga un perfil privado con sus acciones. No todos deberían poder crear causas, editar registros ajenos o ver información sensible. Con autenticación, se garantiza que solo usuarios verificados realicen acciones críticas.
+
+La protección de información es fundamental porque la comunidad confía en la plataforma con sus datos personales, ubicaciones, contactos y preferencias. Un ataque de seguridad podría exponer información privada, poner en riesgo a personas o danar la reputación de la iniciativa. Por eso es crítico implementar cifrado, validaciones y controles de acceso.
+
+Estos tres elementos — base de datos, autenticación y protección — trabajan juntos para crear una plataforma responsable que realmente sirve a la comunidad, que guarda la información de forma segura, que verifica quién accede y que respeta la privacidad de todos sus participantes.

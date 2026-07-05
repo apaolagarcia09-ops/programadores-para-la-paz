@@ -1,0 +1,10 @@
+AUTENTICACIÓN EN PLATAFORMAS COMUNITARIAS
+==========================================
+
+El login permite identificar a un usuario antes de darle acceso a ciertas funciones. Mediante el ingreso de credenciales (usuario y contraseña), la plataforma verifica la identidad del usuario y asigna permisos correspondientes.
+
+Algunas rutas deben estar protegidas porque pueden contener información privada, registros internos, datos de otros usuarios o acciones administrativas que no deberían estar disponibles para cualquier persona. Por ejemplo, editar causas ajenas, ver histórico de usuarios o eliminar registros.
+
+No se deben exponer públicamente contraseñas, documentos de identidad, números de teléfono, direcciones personales, tokens de sesión, claves de API, credenciales de base de datos ni datos sensibles de la comunidad. Toda esta información debe protegerse con cifrado y nunca debe ser visible en el código, logs públicos o respuestas HTTP.
+
+La autenticación es fundamental para garantizar que solo usuarios autorizados accedan a funciones críticas y que la información sensible de la plataforma y sus usuarios esté protegida.
