@@ -1,0 +1,48 @@
+INFORMACIÓN DEL SISTEMA - SEMANA 8
+
+Comando: uname -a
+
+Descripción:
+El comando `uname -a` muestra información completa del sistema operativo y hardware:
+- Nombre del sistema (Linux)
+- Nombre del host
+- Versión del kernel
+- Arquitectura del sistema (32 bits o 64 bits)
+- Información de la máquina
+
+Ejemplo de salida:
+Linux localhost 5.10.0-1-generic #1 SMP Debian 5.10.3-1 x86_64 GNU/Linux
+
+Información útil:
+- Detectar qué versión de Linux está corriendo
+- Verificar compatibilidad de software
+- Diagnosticar problemas de hardware
+- Asegurar que el sistema está actualizado
+
+---
+
+Comando: whoami
+
+Descripción:
+El comando `whoami` muestra el nombre del usuario actual que está logged in el sistema.
+
+Ejemplo de salida:
+juan
+
+Información útil:
+- Verificar con qué usuario se ejecutan comandos
+- Asegurar permisos correctos
+- Auditoría de acceso (quién hizo qué)
+- Debugging de permisos de archivos
+
+---
+
+¿Por qué es útil conocer información del sistema?
+
+Cuando se administra un servidor comunitario es fundamental conocer la información del sistema para:
+1. Realizar actualizaciones de seguridad correctas
+2. Verificar compatibilidad de software nuevo
+3. Auditar accesos y actividades de usuarios
+4. Monitorear recursos disponibles
+5. Resolver problemas de rendimiento o seguridad
+6. Mantener registros de qué usuario ejecutó comandos críticos

@@ -1,0 +1,34 @@
+PRÁCTICAS DE SEGURIDAD PARA PLATAFORMAS COMUNITARIAS - SEMANA 8
+
+1. No exponer datos personales
+   - Nunca publicar nombres completos, direcciones, teléfonos o información identificable
+   - Aplicar privacidad por defecto en todos los datos de usuarios
+   - Implementar anonimidad en reportes si es necesario
+
+2. Proteger credenciales
+   - Encriptar contraseñas en la base de datos
+   - Nunca compartir claves de acceso o tokens
+   - Usar variables de entorno para credenciales sensibles
+   - Cambiar contraseñas por defecto inmediatamente
+   - Implementar autenticación de dos factores
+
+3. Usar conexiones seguras
+   - Implementar HTTPS para todas las comunicaciones
+   - Usar certificados SSL/TLS válidos
+   - Cifrar datos en tránsito
+   - Evitar transmisión de datos sensibles por HTTP sin encripción
+
+4. Registrar accesos
+   - Mantener logs de quién accedió qué
+   - Registrar intentos fallidos de login
+   - Auditoría de cambios en datos sensibles
+   - Permitir trazabilidad de acciones administrativas
+
+5. Limitar acceso a información sensible
+   - Implementar control de acceso basado en roles (RBAC)
+   - No dar permisos de administrador a usuarios normales
+   - Separar datos públicos de datos privados
+   - Validar y autorizar cada solicitud de datos
+   - Implementar rate limiting para prevenir ataques
+
+Implementar estas prácticas requiere esfuerzo técnico pero es esencial para mantener la confianza de la comunidad en la plataforma.
