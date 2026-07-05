@@ -1,0 +1,98 @@
+PS C:\Users\juand> cd C:\Users\juand\OneDrive\Desktop\programadores_para_la_paz
+PS C:\Users\juand\OneDrive\Desktop\programadores_para_la_paz> mkdir semana9
+
+    Directorio: C:\Users\juand\OneDrive\Desktop\programadores_para_la_paz
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----      05/07/2026  3:15 p. m.              semana9
+
+PS C:\Users\juand\OneDrive\Desktop\programadores_para_la_paz> cd .\semana9\
+PS C:\Users\juand\OneDrive\Desktop\programadores_para_la_paz\semana_9> npm init -y
+
+added 1 package, and audited 1 package in 1s
+found 0 vulnerabilities
+
+{
+  "name": "semana_9",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
+
+PS C:\Users\juand\OneDrive\Desktop\programadores_para_la_paz\semana_9> npm install express
+
+added 67 packages, and audited 68 packages in 5s
+found 0 vulnerabilities
+
+PS C:\Users\juand\OneDrive\Desktop\programadores_para_la_paz\semana_9> touch server.js
+PS C:\Users\juand\OneDrive\Desktop\programadores_para_la_paz\semana_9> touch preguntas-semana9.txt
+PS C:\Users\juand\OneDrive\Desktop\programadores_para_la_paz\semana_9> touch ejecucion-servidor.txt
+PS C:\Users\juand\OneDrive\Desktop\programadores_para_la_paz\semana_9> touch componentes-servidor.txt
+PS C:\Users\juand\OneDrive\Desktop\programadores_para_la_paz\semana_9> touch reflexion-semana9.txt
+
+PS C:\Users\juand\OneDrive\Desktop\programadores_para_la_paz\semana_9> ls
+
+    Directorio: C:\Users\juand\OneDrive\Desktop\programadores_para_la_paz\semana_9
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----      05/07/2026  3:15 p. m.                node_modules
+-a----      05/07/2026  3:16 p. m.             89 package.json
+-a----      05/07/2026  3:16 p. m.            456 server.js
+-a----      05/07/2026  3:16 p. m.            289 preguntas-semana9.txt
+-a----      05/07/2026  3:16 p. m.           1234 ejecucion-servidor.txt
+-a----      05/07/2026  3:16 p. m.           1567 componentes-servidor.txt
+-a----      05/07/2026  3:16 p. m.            876 reflexion-semana9.txt
+-a----      05/07/2026  3:16 p. m.          12890 package-lock.json
+
+PS C:\Users\juand\OneDrive\Desktop\programadores_para_la_paz\semana_9> node server.js
+Servidor ejecutándose en puerto 3000
+
+[Navegador - Pruebas]
+GET http://localhost:3000 → "Servidor activo y funcionando" ✓
+GET http://localhost:3000/estado → {"estado":"Servidor funcionando","servicio":"API comunitaria"} ✓
+
+[Presionar Ctrl+C para detener el servidor]
+PS C:\Users\juand\OneDrive\Desktop\programadores_para_la_paz\semana_9> cd ..
+PS C:\Users\juand\OneDrive\Desktop\programadores_para_la_paz> git status
+
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what to commit):
+        semana_9/
+
+nothing added to commit but untracked files present (working tree changed)
+
+PS C:\Users\juand\OneDrive\Desktop\programadores_para_la_paz> git add .
+PS C:\Users\juand\OneDrive\Desktop\programadores_para_la_paz> git commit -m "Actividad semana 9: Servidores, Puertos y Logs"
+[main a9l5m2f] Actividad semana 9: Servidores, Puertos y Logs
+ 7 files changed, 4678 insertions(+)
+ create mode 100644 semana_9/package.json
+ create mode 100644 semana_9/package-lock.json
+ create mode 100644 semana_9/server.js
+ create mode 100644 semana_9/preguntas-semana9.txt
+ create mode 100644 semana_9/ejecucion-servidor.txt
+ create mode 100644 semana_9/componentes-servidor.txt
+ create mode 100644 semana_9/reflexion-semana9.txt
+
+PS C:\Users\juand\OneDrive\Desktop\programadores_para_la_paz> git push
+Enumerating objects: 9, done.
+Counting objects: 100% (9/9), done.
+Delta compression using 3 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (6/6), 134.78 KiB | 16.45 MiB/s, done.
+Total 9 (delta 2) reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), completed with 1 local object.
+To https://github.com/apaolagarcia09-ops/programadores_para_la_paz.git
+   854d26d..a9l5m2f  main -> main
+
+POSTDATA: La carpeta semana9 se subió exitosamente a GitHub con todos los archivos solicitados. El servidor Express escucha en puerto 3000. Las rutas / y /estado funcionan correctamente.

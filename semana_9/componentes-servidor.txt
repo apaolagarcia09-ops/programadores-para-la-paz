@@ -1,0 +1,37 @@
+COMPONENTES DE UN ENTORNO SERVIDOR - SEMANA 9
+
+Sistema Operativo:
+El sistema operativo (Linux, Windows, macOS) es la base de todo servidor. Administra el hardware (CPU, memoria, disco), gestiona procesos, controla permisos de acceso y asigna recursos. Sin un SO estable, el servidor no puede funcionar de manera confiable.
+
+---
+
+Node.js:
+Node.js es el motor de ejecución que interpreta y ejecuta código JavaScript en el servidor. Proporciona APIs para trabajar con archivos, red, y procesos. Node.js es lo que permite que JavaScript sea un lenguaje de backend, no solo un lenguaje de navegador.
+
+---
+
+Aplicación `server.js`:
+Es el código específico que escribimos con Express. Define las rutas, la lógica de negocio, cómo responder a solicitudes y cómo procesar datos. El archivo `server.js` es lo que da propósito al servidor: en este caso, una API comunitaria que responde a solicitudes web.
+
+---
+
+Puerto:
+El puerto es un punto de acceso de red que identifica dónde el servidor escucha solicitudes. En este caso, puerto 3000. Es como una "dirección de buzón" del servidor. El navegador o cliente envía solicitudes a `http://localhost:3000`, indicando que quiere conectarse al puerto 3000 de la máquina local.
+
+---
+
+Logs:
+Los logs son registros de eventos que suceden en el servidor. Cuando ejecutamos `node server.js`, vemos "Servidor ejecutándose en puerto 3000" en la terminal - eso es un log. Los logs son esenciales para: depuración de errores, monitoreo de actividad, auditoría de seguridad y entender qué está haciendo el servidor en cada momento.
+
+---
+
+Jerarquía de componentes:
+Sistema Operativo (base)
+  ↓
+Node.js (intérprete)
+  ↓
+Aplicación server.js (código)
+  ↓
+Puerto 3000 (interfaz de red)
+  ↓
+Logs (registro de actividad)
