@@ -1,0 +1,41 @@
+DEFINICIÓN DE ITERACIÓN - SEMANA 10
+
+¿Qué 2 tareas del backlog harías primero?
+
+1. "Como ciudadano quiero registrar una incidencia para dejar evidencia documentada del caso."
+2. "Como coordinador quiero recibir una notificación en Telegram cuando se registre un nuevo reporte para poder revisar los casos de manera oportuna."
+
+¿Por qué son las más importantes?
+
+Porque son las tareas básicas que transforman una idea en un servicio funcional. La primera tarea permite que la comunidad participe activamente, y la segunda garantiza que los coordinadores reaccionen rápidamente. Sin estas dos, la plataforma no hace nada útil.
+
+Además, hacer estas dos tareas primero reduce riesgo: si algo falla, solo fallan las funcionalidades críticas, no características secundarias. La comunidad puede empezar a usar la plataforma desde el primer día, aunque sea simple.
+
+---
+
+¿Qué significa para ti que una tarea esté "terminada"?
+
+Una tarea está terminada cuando cumple estos criterios:
+
+1. FUNCIONA: La tarea se ejecuta sin errores en el ambiente de prueba. Si es una API, responde correctamente. Si es una notificación, se envía a Telegram. Si es un formulario, se guarda correctamente.
+
+2. FUE PROBADA: Alguien diferente al que escribió el código probó la tarea en casos normales y casos de error. Se documentaron los resultados de las pruebas.
+
+3. QUEDÓ REGISTRADA EN GIT: El código se envió a GitHub con un commit claro que describa qué se hizo. Esto permite que otros miembros del equipo accedan al código.
+
+4. TIENE DOCUMENTACIÓN: Se escribió una breve descripción de cómo funciona la tarea, qué requiere, y cómo usarla. Esto ayuda a otros a entender.
+
+5. NO INTRODUCE INSEGURIDAD: Se revisó que la tarea no expone datos sensibles, contraseñas, o credenciales. Los logs no contienen información personal.
+
+Si la tarea no cumple estos 5 criterios, no está completamente terminada y no se considera lista para el siguiente paso.
+
+---
+
+EJEMPLO:
+
+Si la tarea es "hacer un formulario para registrar incidencias", está terminada cuando:
+- El formulario carga en el navegador sin errores (FUNCIONA)
+- Probamos que al llenar y enviar el formulario, se guarda en la base de datos (PROBADA)
+- El código está en GitHub (REGISTRADA EN GIT)
+- Escribimos instrucciones de cómo llenar el formulario (DOCUMENTACIÓN)
+- No pedimos documentos de identidad o información muy personal (SEGURIDAD)

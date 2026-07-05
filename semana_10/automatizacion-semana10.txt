@@ -1,0 +1,65 @@
+AUTOMATIZACIÓN CON N8N Y TELEGRAM - SEMANA 10
+
+FLUJO DE AUTOMATIZACIÓN: NOTIFICACIÓN DE NUEVOS REPORTES
+
+¿Qué evento activa el flujo?
+
+El flujo se activa cada vez que se registra un nuevo reporte en la plataforma. Cuando un ciudadano completa el formulario de incidencia y presiona "Enviar", se crea un nuevo registro en la base de datos. Este evento dispara automáticamente el flujo en n8n.
+
+Alternativamente, puede configurarse para que n8n verifique cada 5 minutos si hay nuevos reportes sin procesar.
+
+---
+
+¿Qué mensaje se enviaría a Telegram?
+
+El mensaje enviado a Telegram sería:
+
+```
+🔔 NUEVO REPORTE RECIBIDO
+
+Tipo: [tipo de incidencia]
+Ubicación: [zona o barrio]
+Descripción breve: [primeras 100 caracteres]
+
+⏰ Registrado: [fecha y hora]
+
+Revisar en: https://plataforma-comunitaria.com/reportes
+```
+
+El mensaje es breve, informativo y urgente (para que el equipo actúe rápido).
+
+---
+
+¿Qué información NO debería enviarse por seguridad?
+
+NO debe enviarse por Telegram:
+
+1. Nombres completos del reportante: Enviar solo "Ciudadano anónimo" o "Reporte #1234"
+2. Documentos de identidad: Cédula, pasaporte, número de identificación
+3. Direcciones exactas: Solo enviar barrio o zona, no dirección completa
+4. Teléfonos o emails: Proteger contacto directo del reportante
+5. Tokens de API: Nunca incluir claves, contraseñas o credenciales
+6. Datos médicos o sensibles: Si el reporte incluye información de salud, no enviar
+7. Fotos o videos sin consentimiento: Especialmente si contienen rostros
+8. Información de terceros: Nombres de otros ciudadanos mencionados en el reporte
+
+---
+
+ARQUITECTURA DEL FLUJO EN N8N:
+
+Webhook (entrada): Recibe nuevo reporte → 
+Nodo de filtro: Verifica que no sea spam →
+Nodo de transformación: Prepara mensaje seguro →
+Bot de Telegram (salida): Envía a grupo de coordinadores →
+Base de datos: Registra que notificación fue enviada
+
+---
+
+VENTAJAS DE ESTA AUTOMATIZACIÓN:
+
+1. Velocidad: Los coordinadores se enteran en segundos, no en horas
+2. Consistencia: El mensaje siempre tiene el mismo formato
+3. Escalabilidad: Funciona igual con 1 reporte o 100 reportes por día
+4. Seguridad: Nunca expone datos sensibles
+5. Eficiencia: El equipo no pierde tiempo comprobando manualmente
+6. Evidencia: Telegram registra cuándo se envió cada notificación

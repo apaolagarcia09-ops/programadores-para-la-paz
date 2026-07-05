@@ -1,0 +1,30 @@
+BACKLOG DE TAREAS - PLATAFORMA DE REPORTES COMUNITARIOS - SEMANA 10
+
+ORDENADAS POR PRIORIDAD:
+
+1. ALTA PRIORIDAD:
+Como ciudadano quiero registrar una incidencia para dejar evidencia documentada del caso.
+
+2. ALTA PRIORIDAD:
+Como coordinador quiero recibir una notificación en Telegram cuando se registre un nuevo reporte para poder revisar los casos de manera oportuna.
+
+3. MEDIA PRIORIDAD:
+Como miembro del equipo quiero consultar un listado de reportes para hacer seguimiento a los casos.
+
+4. MEDIA PRIORIDAD:
+Como administrador quiero ver el estado de cada reporte (abierto, en proceso, resuelto) para gestionar la respuesta comunitaria.
+
+5. BAJA PRIORIDAD:
+Como usuario quiero recibir un correo de confirmación cuando mi reporte sea registrado para saber que fue recibido.
+
+---
+
+CRITERIOS DE SELECCIÓN DE PRIORIDAD:
+
+Las tareas 1 y 2 son las más importantes porque permiten que la comunidad reporte incidencias y que el equipo sea notificado inmediatamente. Sin esto, la plataforma no cumple su función básica.
+
+La tarea 3 es importante para el seguimiento pero es secundaria si ya existe la capacidad de registrar y notificar.
+
+La tarea 4 agrega valor para la gestión pero no es crítica en una versión inicial.
+
+La tarea 5 es útil pero puede implementarse después en una iteración futura.
