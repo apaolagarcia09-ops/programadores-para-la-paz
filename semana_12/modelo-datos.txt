@@ -1,0 +1,32 @@
+MODELO DE DATOS - PETICIÓN EN 3 CLICS
+======================================
+
+Entidad: Causa
+
+Campos principales:
+- id: Identificador único de la causa (generado automáticamente)
+- titulo: Nombre de la causa comunitaria
+- descripcion: Descripción detallada del problema o solicitud
+- fecha: Fecha de creación de la causa
+- estado: Estado actual (activa, presentada, cerrada)
+
+Propósito:
+Guardar las causas comunitarias creadas por ciudadanos en la plataforma. Esta entidad es el núcleo del sistema, ya que cada causa puede recibir apoyos y generar un documento formal de petición.
+
+
+Entidad: Apoyo
+
+Campos principales:
+- id: Identificador único del apoyo
+- causa_id: Referencia a la causa que recibe el apoyo
+- nombre: Nombre público del ciudadano que apoya (opcional)
+- fecha: Fecha en que se registró el apoyo
+
+Propósito:
+Registrar los apoyos que recibe cada causa. Permite contar la participación comunitaria y validar el respaldo que tiene una petición antes de ser presentada formalmente. No se almacenan datos sensibles como documentos de identidad, teléfonos ni direcciones.
+
+
+Relaciones:
+- Una Causa puede tener múltiples Apoyos (1 a muchos)
+- Cada Apoyo pertenece a una sola Causa
+- El conteo de Apoyos determina si una Causa puede generar su documento PDF

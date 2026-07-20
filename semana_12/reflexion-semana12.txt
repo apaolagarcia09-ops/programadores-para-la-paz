@@ -1,0 +1,10 @@
+REFLEXIÓN SEMANA 12 - CIERRE DEL CURSO
+=======================================
+
+Durante este curso aprendí que la tecnología puede ser una herramienta poderosa para fortalecer la participación ciudadana y la organización comunitaria cuando se usa con responsabilidad y claridad de propósito. Comprendí cómo un servidor Node.js con Express puede recibir y procesar información de ciudadanos, cómo las rutas y endpoints organizan la comunicación entre el usuario y el sistema, y cómo los datos pueden almacenarse en arrays o bases de datos para darles permanencia.
+
+También entendí la importancia de la autenticación para proteger los accesos y de no exponer datos sensibles en las respuestas del servidor ni en los repositorios de GitHub. La seguridad no es opcional en una plataforma comunitaria; es un compromiso ético con las personas que confían en el sistema.
+
+La automatización con n8n y Telegram me mostró que la tecnología puede trabajar de forma automática para informar, coordinar y dar seguimiento sin necesidad de intervención manual constante. Esto permite que comunidades con recursos limitados puedan mantener una plataforma activa y responsiva.
+
+Finalmente, el reto de la Petición en 3 Clics integró todos los conceptos del curso: backend, base de datos, autenticación, interfaz, automatización y generación de documentos. Fue una demostración clara de que aprender tecnología con propósito comunitario transforma el conocimiento técnico en impacto real para la sociedad.

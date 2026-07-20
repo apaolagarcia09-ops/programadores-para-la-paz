@@ -1,0 +1,48 @@
+AUTOMATIZACIÓN - PETICIÓN EN 3 CLICS
+=====================================
+
+AUTOMATIZACIÓN 1: Nueva causa registrada
+
+Evento que activa la automatización:
+Un ciudadano crea una nueva causa en la plataforma y hace clic en "Crear Causa".
+
+Herramienta utilizada:
+n8n (webhook) + Bot de Telegram
+
+Flujo:
+1. El servidor Node.js recibe la petición POST con los datos de la causa.
+2. La causa se guarda en la base de datos.
+3. El servidor hace una llamada al webhook de n8n.
+4. n8n procesa el evento y envía un mensaje al canal de Telegram del coordinador.
+
+Mensaje enviado:
+"Nueva causa registrada en la plataforma comunitaria. Fecha: [fecha]. Consulta el panel para más detalles."
+
+Información que NO debe enviarse por seguridad:
+- Nombres completos, cédulas o documentos de identidad
+- Números de teléfono o correos electrónicos
+- Direcciones físicas o ubicaciones exactas
+- Comentarios sensibles o denuncias específicas
+- Credenciales, tokens, claves o contraseñas
+- IDs internos de usuarios
+
+
+AUTOMATIZACIÓN 2: Meta de apoyos alcanzada
+
+Evento que activa la automatización:
+Una causa supera el número mínimo de apoyos requeridos para presentar la petición formal.
+
+Herramienta utilizada:
+n8n + Telegram
+
+Flujo:
+1. El sistema verifica el conteo de apoyos después de cada nuevo apoyo registrado.
+2. Cuando se alcanza la meta, n8n envía una notificación al coordinador.
+
+Mensaje enviado:
+"Una causa en la plataforma ha alcanzado el número de apoyos necesarios. Ya puede generarse el documento formal."
+
+Información que NO debe enviarse:
+- Lista de personas que apoyaron
+- Datos personales de los participantes
+- Información interna del servidor o base de datos
